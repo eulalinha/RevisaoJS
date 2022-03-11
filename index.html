@@ -1,0 +1,44 @@
+<html> 
+	<head> 
+		<script> 
+			// CRIAR UMA FUNÇÃO QUE RECEBA DOIS VALORES E INFORME QUAL É O MAIOR
+			function maior(a,b){
+				if(a > b){
+					document.wite("O número " + a + " é maior que " + b) ; 
+				}
+				else if(b > a){
+					document.write("O número " + b + " é maior que " + a);  
+				}
+				else{
+					document.write("O números digitados são iguais");
+				}
+				
+			}
+
+			//CRIAR UMA FUNÇÃO PARA MOSTRAR OS VALORES EM UM INTERVALO INFORMADO PELO O USUÁRIO
+			function mostrar(){
+				
+				n1 = parseFloat(prompt("Digite um número para iniciar o intervalo"));
+				n2 = parseFloat(prompt("Digite um número para terminar o intervalo"));
+
+				for(i=n1; i<=n2; i++){ 
+					if(i<n2){
+						document.write(" <p style='font-size:" + i + "pt;'>" + i + ",</p>")}
+					else{
+						document.write(" <p style='font-size:" + i + "pt;'>" + i + ".</p>")}
+				}
+			}
+
+			//MOSTRAR TODOS OS VALORES DIVISIVEIS POR 5 NO INTERVALO DE 1 A 100
+			function intervalo(){
+				for(i = 1; i <= 100; i++){
+					if(i%5==0){
+						document.write(" <p style='font-size:" + i + "pt;color: rgb(240,"+ (i*2) + "," + (i*4) +") ;'>" + i + "</p>");
+					}
+				}
+			}
+			intervalo()
+
+		</script>
+	</head>
+</html>
